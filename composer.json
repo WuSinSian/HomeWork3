@@ -1,0 +1,13 @@
+{
+    "name": "newline/fisrtcomposer",
+    "description": "no",
+    "authors": [
+        {
+            "name": "WuSinSian",
+            "email": "gb80243@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^1.21"
+    }
+}
