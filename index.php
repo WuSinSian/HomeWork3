@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__.'/bootstrap.php';
+date_default_timezone_set('Asia/Taipei');
 use Carbon\Carbon;
 
 // connect to dabase
