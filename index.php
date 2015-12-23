@@ -103,7 +103,10 @@ try {
                 <p><?=mb_substr($row->content, 0, 130, "utf-8"),'…'?></p>
                 <p class="text-right">
                     <span class="glyphicon glyphicon-time"></span>
-                    發表於 <?=$row->created_at?>
+                    發表於 <?php //=$row->created_at;?>
+                           <?=Carbon::createFromFormat('Y-m-d h:i:s' , $row->created_at)->diffForHumans()?>
+                           <?=Carbon::now()->diffForHumans(Carbon::now()->subYear())?>
+                    
                 </p>
             </div>
             <?php endwhile; ?>
